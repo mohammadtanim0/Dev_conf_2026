@@ -1,0 +1,272 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.nav-links li {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+    color: rgb(24, 3, 3);
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(24, 3, 3);
+}
+
+button {
+    background-color: rgb(35, 122, 221);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+
+}
+
+.header-content {
+    color: white;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px;
+    background-image: url(/assents/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+    text-align: center;
+
+}
+
+.header-section button {
+    margin-top: 200px;
+}
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 10%;
+}
+
+.card-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.speaker-card {
+    border: 2px solid rgb(233, 222, 222);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* prising part */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing-section {
+    width: 90%;
+    /* max-width:1200px; */
+    margin: 80px auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.heading h1 {
+    font-size: 52px;
+    color: #1d2939;
+    margin-bottom: 15px;
+}
+
+.heading p {
+    color: #777;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    ;
+}
+
+.card {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.card.active {
+    background: #0f1d2d;
+    color: white;
+    border: none;
+}
+
+.card small {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.card.active small {
+    color: #9bc2ff;
+}
+
+.card h2 {
+    font-size: 52px;
+    margin-top: 10px;
+}
+
+.sub {
+    margin: 8px 0 25px;
+    color: #888;
+    font-size: 14px;
+}
+
+.card.active .sub {
+    color: #c4c4c4;
+}
+
+.card hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin-bottom: 25px;
+}
+
+.card.active hr {
+    background: #2d4158;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: #555;
+    position: relative;
+    padding-left: 18px;
+}
+
+.card ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2f66ff;
+}
+
+.card.active ul li {
+    color: #e6e6e6;
+}
+
+.card button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #2f66ff;
+    background: #fff;
+    color: #2f66ff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card button:hover {
+    background: #2f66ff;
+    color: #fff;
+}
+
+.card.active button {
+    background: #2f66ff;
+    color: #fff;
+    border: none;
+}
+
+.card.active button:hover {
+    background: #1f55ea;
+}
+
+
+@media(max-width:992px){
+    .pricing-container{
+        flex-direction:column;
+    }
+
+    .heading h1{
+        font-size:40px;
+    }
+}
+
+/* Footer section */
+.footer {
+    background: #0f1d2d;
+    padding: 40px 0;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    color: #8d97a7;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: #8d97a7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+@media (max-width:768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+}
